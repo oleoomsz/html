@@ -1,0 +1,37 @@
+body{
+    font-family:arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333
+}
+main{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+/* Classe .card serve de base para todos os cards,
+ definido o estilo geral e a aparência */
+.card{
+    background-color: #fff;
+    border: 2px solid #d4a373;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+#promo-dia{
+    background-color: #6f4e37;
+    color: #fff;
+    border-color:none;
+    text-align: center;
+   
+}
+.destaque{
+    border-color:#c4262e;
+    background-color:#fffff4;
+}
+.esgotado{
+    opacity: 0.5;
+}
+.esgotado h4{
+    text-decoration: line-through;
+}
