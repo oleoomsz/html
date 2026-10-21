@@ -1,0 +1,103 @@
+/* Configurações Globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dfe7f2;
+  color: #2c3e50;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header e Títulos */
+header h1 {
+  font-size: 2.2rem;
+  color: #103375;
+  margin-bottom: 8px;
+}
+
+main p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 25px;
+}
+
+/* Container e Grupos de Botões */
+.grupo-aulas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin-bottom: 25px;
+}
+
+/* Estilo dos Botões */
+.btn-aula {
+  background-color: #ffffff;
+  color: #1550bd;
+  border: none;
+  width: 110px;
+  height: 38px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(21, 80, 189, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efeito Hover (Azul Navy + Dourado/Âmbar) */
+.btn-aula:hover {
+  background-color: #001f3f; /* Azul Navy */
+  color: #ffd700;            /* Dourado Complementar */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 31, 63, 0.25);
+}
+
+/* Estado Ativo (Clique) */
+.btn-aula:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 31, 63, 0.2);
+}
+
+/* Divisores e Textos Auxiliares */
+.texto-status {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a6a85;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+.linha-horizontal {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #b8cbda, transparent);
+  width: 80%;
+  max-width: 600px;
+  margin: 15px 0;
+}
+
+.em-breve {
+  font-style: italic;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+  margin-top: auto;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+}
