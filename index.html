@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrutura Semântica do HTML</title>
-    
+
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 
@@ -27,6 +27,18 @@
     <!-- Conteúdo principal -->
     <main>
         <p>Meu Diretório de arquivos</p>
+
+        <!-- Seção Sobre Mim -->
+        <section class="card-sobre-mim">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou estudante de Desenvolvimento de Sistemas e apaixonado por tecnologia. Este repositório/diretório reúne todas as minhas atividades, exercícios e projetos práticos desenvolvidos ao longo das aulas. O objetivo é registrar meu aprendizado em HTML, CSS e lógica de programação.</p>
+        </section>
+
+        <!-- Seção de Aulas -->
+        <section class="card-Aulas">
+            <h2>Aulas</h2>
+            <p>Explore as aulas e atividades que desenvolvi durante o curso. Cada aula contém exemplos práticos, exercícios e projetos que demonstram meu progresso e habilidades adquiridas.</p>
+        </section>
     </main>
 
     <!-- Aulas 1 a 6 -->
@@ -54,7 +66,6 @@
         <a href="./aula11/reserva.html"><button class="btn-aula">Aula 11</button></a>
     </div>
 
-    <p class="texto-status">Feito da linha para cima</p>
     <hr class="linha-horizontal">
     <p class="em-breve">Em breve</p>
 
@@ -77,6 +88,29 @@
 
     <!-- Rodapé -->
     <footer>
+        <!-- Botões de Redes Sociais -->
+        <div class="redes-sociais">
+            <a href="https://instagram.com/oleoomsz" target="_blank" rel="noopener noreferrer">
+                <button class="btn-rede btn-instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+                        <path d="M16.5 7.5v.01" />
+                    </svg>
+                    Instagram
+                </button>
+            </a>
+            <a href="https://wa.me/5511963102534" target="_blank" rel="noopener noreferrer">
+                <button class="btn-rede btn-whatsapp">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9" />
+                        <path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+                    </svg>
+                    WhatsApp
+                </button>
+            </a>
+        </div>
+
         <p>&copy; 2026 TDS1. Leonardo Manoel</p>
         <p>Todos os direitos reservados.</p>
     </footer>
