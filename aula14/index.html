@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.A. Multimarcas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="container">
+            <a href="#inicio" class="logo">
+                <img src="img/Logo.png" alt="Logo L.A. Multimarcas">
+            </a>
+            <nav class="menu">
+                  <a href="../index.html"><button
+> Voltar
+                    </button></a>
+                <a href="#inicio">Início</a>
+                <a href="#carros">Carros</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="banner">
+        <div class="container banner-conteudo">
+            <span class="tag-banner">EXCLUSIVIDADE & PERFORMANCE</span>
+            <h1>A potência que você procura está aqui.</h1>
+            <p>Veículos selecionados, periciados e prontos para acelerar com você.</p>
+            <div class="banner-botoes">
+                <a href="#carros" class="btn">Ver Estoque</a>
+                <a href="#contato" class="btn btn-secundario">Agendar Visita</a>
+            </div>
+        </div>
+    </section>
+
+    <main id="carros" class="container secao">
+        <h2>Carros em Destaque</h2>
+
+        <div class="grid-carros">
+            <article class="card">
+                <img src="img/carro1.jpg" alt="BMW M4 Competition">
+                <div class="card-info">
+                    <h3>BMW M4 Competition</h3>
+                    <p class="detalhes">Ano: 2026 | Automático | Gasolina</p>
+                    <p class="preco">R$ 869.950,00</p>
+                    <a href="#contato" class="btn-card">Tenho Interesse</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/carro 2.jpg" alt="BMW M4 Coupé">
+                <div class="card-info">
+                    <h3>BMW M4 Coupé</h3>
+                    <p class="detalhes">Ano: 2018 | 26.400 km | Gasolina</p>
+                    <p class="preco">R$ 415.000,00</p>
+                    <a href="#contato" class="btn-card">Tenho Interesse</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/carro3.webp" alt="Chevrolet Camaro ZR1">
+                <div class="card-info">
+                    <h3>Chevrolet Camaro ZL1</h3>
+                    <p class="detalhes">Ano: 2019 | 14.800 km | V8 Gasolina</p>
+                    <p class="preco">R$ 649.000,00</p>
+                    <a href="#contato" class="btn-card">Tenho Interesse</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/carro4.jpg" alt="Porsche 911 Carrera GTS">
+                <div class="card-info">
+                    <h3>Porsche 911 Carrera GTS</h3>
+                    <p class="detalhes">Ano: 2026 | PDK | Gasolina</p>
+                    <p class="preco">R$ 1.180.000,00</p>
+                    <a href="#contato" class="btn-card">Tenho Interesse</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/carro5.jpg" alt="Audi RS6 Avant">
+                <div class="card-info">
+                    <h3>Audi RS6 Avant</h3>
+                    <p class="detalhes">Ano: 2025 | 6.500 km | V8 Biturbo</p>
+                    <p class="preco">R$ 1.145.000,00</p>
+                    <a href="#contato" class="btn-card">Tenho Interesse</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/carro6.jpg" alt="Ford Mustang GT V8">
+                <div class="card-info">
+                    <h3>Ford Mustang GT V8</h3>
+                    <p class="detalhes">Ano: 2026 | Automático | Gasolina</p>
+                    <p class="preco">R$ 549.000,00</p>
+                    <a href="#contato" class="btn-card">Tenho Interesse</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <section id="contato" class="secao contato">
+        <div class="container">
+            <h2>Agende uma Visita</h2>
+            <p class="subtitulo">Preencha seus dados que entramos em contato com você.</p>
+
+            <form class="formulario" action="#" method="POST">
+                <label for="nome">Seu Nome *</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone / WhatsApp *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+
+                <label for="carro">Carro de Interesse *</label>
+                <select id="carro" name="carro" required>
+                    <option value="BMW M4 Competition">BMW M4 Competition</option>
+                    <option value="BMW M4 Coupé">BMW M4 Coupé</option>
+                    <option value="Chevrolet Camaro ZR1">Chevrolet Camaro ZR1</option>
+                    <option value="Porsche 911 Carrera GTS">Porsche 911 Carrera GTS</option>
+                    <option value="Audi RS6 Avant">Audi RS6 Avant</option>
+                    <option value="Ford Mustang GT V8">Ford Mustang GT V8</option>
+                </select>
+
+                <label for="mensagem">Mensagem (opcional)</label>
+                <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+
+                <button type="submit" class="btn btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>L.A. Multimarcas - 2026 | Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f6;
+    color: #1e1e24;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.topo {
+    background-color: #111115;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.topo .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo strong {
+    color: #d90429;
+}
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: #d1d1d6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+/* Banner Inicial */
+.banner {
+    position: relative;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    background: 
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 2px,
+            transparent 2px,
+            transparent 8px
+        ),
+        linear-gradient(90deg, #0d0d11 25%, rgba(13, 13, 17, 0.78) 60%, rgba(13, 13, 17, 0.35) 100%),
+        url("img/carro1.jpg") right  / cover no-repeat;
+    color: #ffffff;
+    padding: 80px 20px;
+}
+
+.banner-conteudo {
+    width: 100%;
+    text-align: left;
+}
+
+.tag-banner {
+    display: inline-block;
+    color: #d90429;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 12px;
+}
+
+.banner h1 {
+    font-size: 2.8rem;
+    line-height: 1.15;
+    max-width: 560px;
+    margin-bottom: 16px;
+}
+
+.banner p {
+    color: #d1d1d6;
+    font-size: 1.1rem;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.banner-botoes {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d90429;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #b00321;
+}
+
+button {
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 20px;
+  width : 80px;
+}
+
+
+/* Seções e Grid de Carros */
+.secao {
+    padding: 64px 20px;
+}
+
+.secao h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 36px;
+}
+
+.grid-carros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.detalhes {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.preco {
+    color: #d90429;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.btn-card {
+    display: block;
+    background-color: #111115;
+    color: #ffffff;
+    padding: 11px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-card:hover {
+    background-color: #d90429;
+}
+
+/* Contato e Formulário */
+.contato {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5ea;
+}
+
+.contato h2 {
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 32px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 11px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #d90429;
+}
+
+.btn-enviar {
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #111115;
+    color: #9e9ea7;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.9rem;
+}
