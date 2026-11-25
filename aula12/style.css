@@ -1,0 +1,38 @@
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Garante que o vídeo seja responsivo no celular */
+}
+
+audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Garante que o áudio seja responsivo no celular */
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+
+object {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Garante que o PDF seja responsivo no celular */
+}
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
